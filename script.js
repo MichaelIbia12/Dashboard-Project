@@ -14,7 +14,7 @@ submit.addEventListener("click", () => {
         Name_last: last_name.value,
         Email:Email.value,
         password: Password.value,
-        login: true,
+        login: false,
         dark_mode: false,
         login_count: 0
     }

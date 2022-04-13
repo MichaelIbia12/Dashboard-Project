@@ -6,28 +6,19 @@ const submit =  document.getElementById("Submit")
 let profile;
 let profile_storage
 submit.addEventListener("click", (e) => {
-    
     e.preventDefault()
-    
     for (let index = 0; index < localStorage.length; index++) {
-        
-       var profile_storage = JSON.parse(localStorage.getItem("User"+index))
-        console.log(profile.Name_first);
-       
-        if(profile_storage.Name_first === profile.Name_first && profile.Email === profile_storage.Email && profile_storage.password === profile.password){
-            localStorage.setItem("User"+ index, JSON.stringify(profile.login))
+      profile_storage = JSON.parse(localStorage.getItem(localStorage.key(index)))
+        console.log(profile_storage);
+        if(profile_storage.Name_first === first_name.value && profile_storage.Email === Email.value && profile_storage.password === Password.value){
+            localStorage.setItem(localStorage.key(index), JSON.stringify(profile_storage))
             window.open("/Dashboard/index.html")
-
+            break
         } else{
-            
             first_name.style.borderColor = "red"
             Password.style.borderColor = "red"
             Email.style.borderColor = "red"
             
-            // localStorage.setItem("User"+count++, JSON.stringify(profile))
-                
-             
-        
         }
     }
     
