@@ -1,0 +1,40 @@
+@media only screen and (max-width: 1800px) {
+   .c1{
+      width: 400px;
+   }
+  }
+@media only screen and (max-width: 1600px) {
+    .cards{
+        justify-items:normal;
+    }
+    .log-container{
+        margin-right: 30px;
+    }
+    body{
+        padding: 10px;
+    }
+  
+   .bar{
+       width: 50px;
+       margin-right: 50px;
+       margin-left: 0px;
+   }
+   .bars{
+       grid-gap: 0px;
+   }
+
+  }
+
+@media only screen and (max-width: 1430px) {
+  .c1{
+      width: 300px;
+  }
+  .bars{
+      grid-template-columns: repeat(7, 100px);
+  }
+  }
+@media only screen and (max-width: 1300px) {
+    .c2{
+        width: 400px;
+    }
+  }

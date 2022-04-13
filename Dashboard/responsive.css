@@ -1,0 +1,40 @@
+
+
+@media only screen and (max-width: 1600px) {
+    body{
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 1fr;
+    }
+    nav{
+        grid-template-rows: 1fr;
+        grid-template-columns:3fr repeat(3, 150px) 3fr;
+    }
+    .icon{
+        padding: 15px;
+        color: lightslategray;
+    }
+    .icon:hover{
+        color: white;
+    }
+    .icon span{
+       display: none;
+       
+    }
+    .icon:last-child{
+        color: white;
+        text-align: end;
+        padding-right: 60px;
+    }
+    .item{
+        border-width:0px;        
+    }
+    .item:hover{
+        border-width:0px;        
+    }
+    .profile{
+        margin-top: 0px;
+        width: 10px;
+        height: 10px;
+        font-size: 25px;
+    }
+   }

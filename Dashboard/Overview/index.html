@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="../../animation.css">
+    <link rel="stylesheet" href="../../icons/css/all.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
+        integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+    <div class="modal">
+        <div class="inner-modal">
+            <button class="fa fa-close"></button>
+            <div class="upper">
+
+                <h1>What do you want to do...</h1>
+                <div class="select">
+                    <button class="selection">Depost to Fixed payment</button>
+                    <button class="selection">Depost to Payment</button>
+                    <button class="selection">Depost to Accounts</button>
+                </div>
+                <button class="submit">Next</button>
+            </div>
+            <iframe src="./modal/fixed/index.html" frameborder="0"></iframe>
+        </div>
+    </div>
+    <nav>
+        <div class="sec_1">
+            <input type="text">
+            <button type="submit"><i class="fa fa-search"></i></button>
+        </div>
+        <div class="nav_section">
+
+            <i class="fa fa-user profile"></i>
+
+            <ul>
+                <li><i class="fa fa-plus"></i></li>
+
+
+            </ul>
+        </div>
+    </nav>
+    <div class="body">
+        <div class="charts">
+            <div class="sec-chart">
+
+                <div class="chart">
+                    <i class="	fas fa-piggy-bank"></i>
+                    <p>Savings</p>
+                    <h1>$200</h1>
+                </div>
+
+                <div class="chart c">
+                    <i class=" 	fas fa-wallet"></i>
+                    <p>Current</p>
+                    <h1>$200</h1>
+                </div>
+
+                <div class="chart s">
+                    <i class=" fa fa-book"></i>
+                    <p>Students</p>
+                    <h1>$200</h1>
+                </div>
+
+            </div>
+            <div class="bar"></div>
+        </div>
+        <div class="tables">
+            <div class="col">
+                <h1>Payments</h1>
+                <div class="item">
+                    <p>food</p>
+                    <p>rent</p>
+                </div>
+            </div>
+            <div class="col">
+                <h1>
+                    Fixed Payments
+                </h1>
+                <div class="item t">
+                    <p>rent</p>
+                    <p>food</p>
+
+
+                </div>
+            </div>
+            <div class="col l">
+                <div class="col-mid verve">
+                    <h1>MR</h1>
+                    <div class="lower">
+                        <p class="card-number">1111-1111-1111-1111</p>
+                        <p class="name">Marshall</p>
+                    </div>
+                </div>
+                <div class="col-mid">
+                    <h1>Leadership</h1>
+                </div>
+            </div>
+            <div class="col">
+                <h1>History</h1>
+                <!--Add columns bettween spam and important-->
+                <div class="item">
+                    <p>food</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>@Marshall</footer>
+
+    <script src="transaction.js"></script>
+    <script src="chart.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
