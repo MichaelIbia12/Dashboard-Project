@@ -4,14 +4,17 @@
  
     --default:rgb(51, 83, 228);
 }
-
+body{
+    background-color: rgb(192, 192, 192);
+}
 
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     transition: all 0.2s;
-    font-family: 'Segoe UI';
+    font-family: monospace;
+
     
 }
 
@@ -143,7 +146,7 @@ padding-right: 50px;
 }
 .bar{
     background-color: var(--light);
-    border-radius: 30px;
+    
 }
 
 .col{

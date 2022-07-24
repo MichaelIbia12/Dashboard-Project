@@ -4,6 +4,11 @@ const Email =  document.getElementById("Email")
 const password_one =  document.getElementById("Password-one")
 const Password =  document.getElementById("Password")
 const submit =  document.getElementById("submit")
+
+const authenticateButton = document.getElementById("authenticate")
+
+
+
 let profile
 let count = 0
 let compare
@@ -18,9 +23,8 @@ submit.addEventListener("click", () => {
         dark_mode: false,
         login_count: 0
     }
-      for (let index = 0; index < localStorage.length; index++) {
-       /*  compare = JSON.parse(localStorage.getItem(localStorage.key(index)))
-          console.log(compare)*/
+    
+          
           if(password_one.value != Password.value) {
               Password.style.borderColor = "red"
             Password_one.style.borderColor = "red"
@@ -35,18 +39,21 @@ submit.addEventListener("click", () => {
             Email.style.borderColor = "red"
             
 
-        }/*else if(compare.Name_first === first_name.value && compare.Email === Email.value  && compare.password === Password.value){
-         console.log("account discovered")
-         alert("already have an account, Please Login.")
-         window.open("/login/index.html")
-        }*/else{
+        }else{
             localStorage.setItem("User"+ count++ , JSON.stringify(profile))
             window.open("/Dashboard/index.html")
-            break;
+            console.log("working");
           
-        }
+          
+        
         
     }
         
 })
 
+for (let index = 0; index < authenticateButton.length; index++) {
+    
+    authenticateButton[index].addEventListener("click", () => {
+       console.log("tt");
+    })
+}

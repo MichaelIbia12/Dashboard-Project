@@ -1,6 +1,6 @@
 :root{
     --dark:#212121;
-    --light:rgb(192, 192, 192);
+  
 }
 *{
     padding: 0;
@@ -16,7 +16,7 @@ body{
     grid-template-columns: 1fr 32fr ;
     overflow: hidden;
 }
-/*
+
 iframe{
     height: 100%;
     width: 100%;
@@ -58,7 +58,7 @@ nav{
     font-size: 40px;
     width: 70px;
 }
-*/
+
 
 
 
@@ -88,26 +88,20 @@ iframe{
 }
 nav{
     padding: 20px;
-    background-color: var(--light);
+    background-color:#212121;
 }
 .icon{
-    --light:#212121;
-    --dark:rgb(192, 192, 192);
-    color: var(--light);
+    
+    color: white;
     font-size: 20px;
     margin-bottom: 30px;
     padding: 5px;
 }
 .icon:hover{
-    transform: scale(1.5);
-    color: rgb(51, 83, 228);
+
+    color: rgb(110, 110, 110);
 }
-.r:hover{
-    color: red;
-}
-.d:hover{
-    color: black;
-}
+
 .icon:first-child{
-    margin-top:300px;
+    margin-top:350px;
 }
