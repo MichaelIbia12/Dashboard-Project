@@ -7,8 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../../font.css">
     <link rel="stylesheet" href="responsive.css">
-    <link rel="stylesheet" href="../../animation.css">
+
     <link rel="stylesheet" href="../../icons/css/all.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"
         integrity="sha512-QSkVNOCYLtj73J4hbmVoOV6KVZuMluZlioC+trLpewV8qMjsWqlIQvkn1KGX2StWvPMdWGBqim1xlC8krl1EKQ=="
@@ -32,49 +33,53 @@
             <iframe src="./modal/fixed/index.html" frameborder="0"></iframe>
         </div>
     </div>
+
     <nav>
-        <div class="sec_1">
-            <input type="text">
+        <div class="search">
+            <input type="text" id="search">
             <button type="submit"><i class="fa fa-search"></i></button>
         </div>
         <div class="nav_section">
-
             <i class="fa fa-user profile"></i>
-
             <ul>
-                <li><i class="fa fa-plus"></i></li>
-
-
+                <li><i class="fa fa-plus "></i>
+                    
+                </li>
             </ul>
+        </div>
+        <div class="searchResult">
+            <li class="listItem" id="listItem">food</li>
+            <li class="listItem" id="listItem">light</li>
         </div>
     </nav>
 
-    
-    <div class="body">
-        <div class="charts">
-            <div class="sec-chart">
 
-                <div class="chart">
+    <div class="body">
+        <div class="majorCards">
+            <div class="minorCards">
+
+                <div class="innerCard">
                     <i class="	fas fa-piggy-bank"></i>
                     <p>Savings</p>
                     <h1>$200</h1>
                 </div>
 
-                <div class="chart c">
+                <div class="innerCard c">
                     <i class=" 	fas fa-wallet"></i>
                     <p>Current</p>
                     <h1>$200</h1>
                 </div>
 
-                <div class="chart s">
+                <div class="innerCard s">
                     <i class=" fa fa-book"></i>
                     <p>Students</p>
                     <h1>$200</h1>
                 </div>
 
             </div>
-            <div class="bar"></div>
+            <div class="chart">Comming soon</div>
         </div>
+
         <div class="tables">
             <div class="col">
                 <h1>Payments</h1>
@@ -88,13 +93,13 @@
                     Fixed Payments
                 </h1>
                 <div class="item t">
-                    <p>rent</p>
+                    <p>Lorem ipsum dolor </p>
                     <p>food</p>
 
 
                 </div>
             </div>
-            <div class="col l">
+            <div class="subCol">
                 <div class="col-mid verve">
                     <h1>MR</h1>
                     <div class="lower">
@@ -117,8 +122,8 @@
     </div>
     <footer>@Marshall</footer>
 
-    <script src="transaction.js"></script>
-    <script src="chart.js"></script>
+ 
+    <script src="../../jquery.js"></script>
     <script src="script.js"></script>
 </body>
 

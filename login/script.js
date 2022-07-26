@@ -3,7 +3,7 @@ const Password =  document.getElementById("Password")
 const Email =  document.getElementById("Email")
 const submit =  document.getElementById("Submit")
 
-let profile;
+
 let profile_storage
 submit.addEventListener("click", (e) => {
     e.preventDefault()
