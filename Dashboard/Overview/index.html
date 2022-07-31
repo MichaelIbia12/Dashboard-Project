@@ -17,20 +17,20 @@
 </head>
 
 <body>
-    <div class="modal">
+    <div class="modal" id="modal">
         <div class="inner-modal">
-            <button class="fa fa-close"></button>
-            <div class="upper">
+            <button class="fa fa-close" id="closeBtn"></button>
+            <div class="mainPage" id="mainPage">
 
                 <h1>What do you want to do...</h1>
                 <div class="select">
-                    <button class="selection">Depost to Fixed payment</button>
-                    <button class="selection">Depost to Payment</button>
-                    <button class="selection">Depost to Accounts</button>
+                    <button class="selection" id="fixed">Depost to Fixed payment</button>
+                    <button class="selection" id="payments">Depost to Payment</button>
+                    <button class="selection" id="account">Depost to Accounts</button>
                 </div>
-                <button class="submit">Next</button>
+               
             </div>
-            <iframe src="./modal/fixed/index.html" frameborder="0"></iframe>
+            <iframe src="" frameborder="0" id="iframe"></iframe>
         </div>
     </div>
 
@@ -42,7 +42,7 @@
         <div class="nav_section">
             <i class="fa fa-user profile"></i>
             <ul>
-                <li><i class="fa fa-plus "></i>
+                <li><i class="fa fa-plus " id="modalOpener"></i>
                     
                 </li>
             </ul>

@@ -42,4 +42,45 @@ searchBar.addEventListener("input", () => {
 
 })
 
+const modalBtn = document.getElementById("modalOpener")
+const modal = document.getElementById("modal")
+const mainPage = document.getElementById("mainPage")
+const closeBtn = document.getElementById("closeBtn")
+const iframe = document.getElementById("iframe")
+const selection = document.querySelectorAll(".selection")
 
+for (let index = 0; index < selection.length; index++) {
+    
+    selection[index].addEventListener("click", () => {
+       $(mainPage).fadeOut();
+       $(iframe).fadeIn();
+       iframe.src = `./modal/${selection[index].id}/index.html`
+       closeBtn.classList.remove("fa-close")
+       closeBtn.classList.add("fa-angle-left")
+    })
+}
+
+
+
+modalBtn.addEventListener("click", () => {
+     $(modal).fadeIn()
+})
+
+closeBtn.addEventListener("click", () => {
+    if (iframe.style.display == "none"){
+        $(modal).fadeOut()
+    }
+    if (iframe.style.display != "none"){
+        $(mainPage).fadeIn();
+        $(iframe).fadeOut();
+        closeBtn.classList.add("fa-close")
+       closeBtn.classList.remove("fas fa-angle-left")
+    }
+})
+
+const pages = document.querySelectorAll(".input")
+
+for (let index = 0; index < pages.length; index++) {
+    alert(pages.id)
+    
+}
